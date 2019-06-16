@@ -10,7 +10,7 @@ browser = webdriver.Chrome()
 browser.get("http://suninjuly.github.io/explicit_wait2.html")
 
 # ждем, когда цена дома уменьшится до 10000 RUR
-WebDriverWait(browser, 15).until(
+WebDriverWait(browser, 10).until(
     EC.text_to_be_present_in_element((By.ID, "price"), "10000 RUR")
     )
 
